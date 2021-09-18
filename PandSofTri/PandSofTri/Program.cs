@@ -14,10 +14,11 @@ namespace PandSofTri
             double x2 = double.Parse(Console.ReadLine());
             Console.WriteLine("Y:");
             double y2 = double.Parse(Console.ReadLine());
-            double per = 2*(Math.Abs(x1 - x2)+Math.Abs(y1 - y2));
-            per = Math.Round(per, 3);
-            double sq = Math.Abs(x1 - x2)*Math.Abs(y1 - y2);
-            sq = Math.Round(sq, 3);
+            //Нет смысла проверять входные данные, для них нет недопустимых значений
+            double per = 2*(Math.Abs(x1 - x2)+Math.Abs(y1 - y2));//считаем периметр
+            per = Math.Round(per, 3);//округляем
+            double sq = Math.Abs(x1 - x2)*Math.Abs(y1 - y2);//считаем площадь
+            sq = Math.Round(sq, 3);//округляем
             Console.WriteLine($"Периметр для прямоугольника, с введёнными координатами вершин: {per}; площадь: {sq}.");
         }
     }
